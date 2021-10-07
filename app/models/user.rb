@@ -1,4 +1,6 @@
 class User < ApplicationRecord
   has_many :flashcards, dependent: :destroy
-  validates_presence_of :login, :name
+  has_many :tags, dependent: :destroy
+  validates :name, presence: true
+  validates :login, presence: true, uniqueness: true
 end
