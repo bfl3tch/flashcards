@@ -4,7 +4,12 @@
 [![Forks][forks-shield]][forks-url]
 ![Version][version-badge]
 
+### FlashCards
+
+#### Users can view questions and categories, with the ability "flip" the card to view the answer by clicking on it
+
 ##### A ReSTful, JSON 1.0 compliant API built in Rails behind a React FE
+###### Allows for viewing, creating, updating, and deleting flashcards <br/>
 
 <img src="https://media2.giphy.com/media/pjMj7ztdPyd1UvwfwV/giphy.gif?cid=790b76112ce57441cb36a2eb5126d8eddfa8c60148a52272&rid=giphy.gif&ct=g" height="70%" width="70%"/>
 <img src="https://user-images.githubusercontent.com/74567704/136487889-aa9de81e-853a-4f8c-8ae4-e3127f7982db.png" />
@@ -327,7 +332,7 @@ POST /flashcards
 ```
 POST http://localhost:3000/api/v1/flashcards
 
-params: { flashcard: { category: "languages", question: "How do you say hello in Spanish?", answer: "hola" } }
+params: { category: "languages", question: "How do you say hello in Spanish?", answer: "hola" }
 ```
 
 ### Example Response
@@ -359,7 +364,7 @@ PATCH /flashcards/1
 ```
 PATCH http://localhost:3000/api/v1/flashcards/1
 
-params: { flashcard: { answer: "buen día" } }
+params: { answer: "buen día" }
 ```
 
 ### Example Response
