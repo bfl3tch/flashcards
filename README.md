@@ -114,8 +114,8 @@ This project requires Ruby 2.7.2, Rails 5.2.6.
 * Database Creation
     ```bash
     $ rails db:{drop,create,migrate,seed}
-    Created database 'sweater_weather_development'
-    Created database 'sweater_weather_test'
+    Created database 'flashcard_development'
+    Created database 'flashcard_test'
     ```
 
 * How to Run the Test Suite
@@ -147,8 +147,6 @@ http://localhost:3000/api/v1
 
 - For `GET` requests, you can send the endpoint requests through your internet browser, or utilize an API client (i.e. [Postman](https://www.postman.com/))
 - For `POST` requests, you will need to use an API client to provide the required request body
-- A fully functional [Postman collection](https://github.com/bfl3tch/road-trip-weather/blob/main/spec/postman_collections/SweaterWeatherDemo.postman_collection.json) is included with this repository, to further assist with UAT and endpoint exploration
-
 
 The following table presents each API endpoint and its associated documentation
 - For `GET` requests, an example link is provided for demonstration purposes  
