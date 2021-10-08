@@ -6,8 +6,8 @@
 
 ##### A ReSTful, JSON 1.0 compliant API built in Rails behind a React FE
 
-<a href="https://road-trip-weather-api.herokuapp.com/api/v1/forecast?location=kennebunk"><img src="https://user-images.githubusercontent.com/74567704/135339387-16a9c03c-beab-4d9c-885d-6612b5869230.png" /></a>
-
+<img src="https://media2.giphy.com/media/pjMj7ztdPyd1UvwfwV/giphy.gif?cid=790b76112ce57441cb36a2eb5126d8eddfa8c60148a52272&rid=giphy.gif&ct=g" height="70%" width="70%"/>
+<img src="https://user-images.githubusercontent.com/74567704/136487889-aa9de81e-853a-4f8c-8ae4-e3127f7982db.png" />
 
 ## Table of Contents
 
@@ -51,6 +51,7 @@ Learning goals and areas of focus consisted of:
 <p>
   <img src="https://img.shields.io/badge/Ruby-CC0000.svg?&style=flaste&logo=ruby&logoColor=white" />
   <img src="https://badges.aleen42.com/src/javascript.svg" />
+  <img src="https://img.shields.io/badge/CSS-0077B5?style=for-the-badge&logo=CSS&logoColor=blue">
 </p>
 
 #### Tools
