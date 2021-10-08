@@ -38,8 +38,6 @@ Learning goals and areas of focus consisted of:
 - Create a ReST API for the back end
 - Focus on developing React knowledge to present a front end allowing for users to utilize their flash cards
 
-[Technical Requirements](https://backend.turing.edu/module3/projects/sweater_weather/requirements)
-
 #### <ins>Frameworks</ins>
 <p>
   <img src="https://img.shields.io/badge/Ruby%20On%20Rails-b81818.svg?&style=flat&logo=rubyonrails&logoColor=white" />
