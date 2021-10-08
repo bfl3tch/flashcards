@@ -25,6 +25,7 @@
 - [Tools Utilized](#frameworks)
 - [Project Configurations](#setup)
 - [Exposed Endpoints](#endpoints)
+- [Future Schema](#schema)
 - [Contributors](#contributors)
 
 ------
@@ -390,7 +391,10 @@ DELETE /flashcards/1
 DELETE http://localhost:3000/api/v1/flashcards/1
 
 ```
+------
+### <ins>Schema</ins>
 
+<img src="https://user-images.githubusercontent.com/74567704/136592058-25e87d28-4459-41f3-8fb1-d0938d9fc9c0.png">
 ------
 
 ### <ins>Contributors</ins>
