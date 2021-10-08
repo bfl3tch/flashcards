@@ -1,58 +1,36 @@
 class Api::V1::FlashcardsController < ApplicationController
-  before_action :authenticate_user!
   before_action :set_flashcard, only: [:show, :update, :destroy]
 
-  # GET /flashcards
   def index
-    @flashcards = @current_user.flashcards
-
-    render json: @flashcards
+    json_response(FlashcardSerializer.new(Flashcard.all))
   end
 
-  # GET /flashcards/1
   def show
-    render json: @flashcard, include: :tags
+    json_response(FlashcardSerializer.new(@flashcard))
   end
 
-  # POST /flashcards
   def create
-    @flashcard = Flashcard.new(flashcard_params)
+    flashcard = Flashcard.create!(flashcard_params)
 
-    if @flashcard.save
-      render json: @flashcard, status: :created, location: @flashcard
-    else
-      render json: @flashcard.errors, status: :unprocessable_entity
-    end
+    json_response(FlashcardSerializer.new(flashcard))
   end
 
-  # PATCH/PUT /flashcards/1
   def update
-    if @flashcard.update(flashcard_params)
-      render json: @flashcard
-    else
-      render json: @flashcard.errors, status: :unprocessable_entity
-    end
+    @flashcard.update(flashcard_params)
+    json_response(FlashcardSerializer.new(@flashcard))
   end
 
-  # GET /flashcards/1/tags
-  def tags
-    @flashcard.tags
-  end
-
-
-  # DELETE /flashcards/1
   def destroy
     @flashcard.destroy
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_flashcard
-      @flashcard = @current_user.flashcards.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def flashcard_params
-      params.require(:flashcard).permit(:question, :answer, :correct_guesses, :incorrect_guesses, :user_id)
-    end
+  def set_flashcard
+    @flashcard = Flashcard.find(params[:id])
+  end
+
+  def flashcard_params
+    params.require(:flashcard).permit(:question, :answer, :correct_guesses, :incorrect_guesses, :category)
+  end
 end
