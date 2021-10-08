@@ -1,0 +1,1057 @@
+{
+	"info": {
+		"_postman_id": "9054dd7b-4f3b-4703-ba48-6976aefec5c9",
+		"name": "Flashcards",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all flashcards",
+			"item": [
+				{
+					"name": "Get all flashcards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/v1/flashcards",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"v1",
+								"flashcards"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get all flashcards",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"8fe805dca6322569ddc2a4ce473fef18\""
+								},
+								{
+									"key": "Cache-Control",
+									"value": "max-age=0, private, must-revalidate"
+								},
+								{
+									"key": "X-Request-Id",
+									"value": "e1870264-3b8e-4cd1-ae01-0968720b5c90"
+								},
+								{
+									"key": "X-Runtime",
+									"value": "0.004120"
+								},
+								{
+									"key": "Vary",
+									"value": "Origin"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"data\": [\n        {\n            \"id\": \"1\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"How do you say hello in Spanish?\",\n                \"answer\": \"hola\"\n            }\n        },\n        {\n            \"id\": \"2\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"How do you say goodbye in Spanish?\",\n                \"answer\": \"adios\"\n            }\n        },\n        {\n            \"id\": \"4\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"How do you say hello in French?\",\n                \"answer\": \"bonjour\"\n            }\n        },\n        {\n            \"id\": \"5\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"math\",\n                \"question\": \"What is 1+1?\",\n                \"answer\": \"2\"\n            }\n        },\n        {\n            \"id\": \"6\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"math\",\n                \"question\": \"What is 10+10?\",\n                \"answer\": \"20\"\n            }\n        },\n        {\n            \"id\": \"7\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"math\",\n                \"question\": \"What is 10+100?\",\n                \"answer\": \"110\"\n            }\n        },\n        {\n            \"id\": \"8\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"math\",\n                \"question\": \"What is 100+100?\",\n                \"answer\": \"200\"\n            }\n        },\n        {\n            \"id\": \"9\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"Como se dice hola in ingles?\",\n                \"answer\": \"hello\"\n            }\n        },\n        {\n            \"id\": \"10\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"How do you say player in Spanish?\",\n                \"answer\": \"jugador\"\n            }\n        },\n        {\n            \"id\": \"11\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"How do you say soccer in Spanish?\",\n                \"answer\": \"futbol\"\n            }\n        },\n        {\n            \"id\": \"3\",\n            \"type\": \"flashcard\",\n            \"attributes\": {\n                \"category\": \"languages\",\n                \"question\": \"How do you say goodbye in French?\",\n                \"answer\": \"au revoir\"\n            }\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Get a single flashcard",
+			"item": [
+				{
+					"name": "Happy Path",
+					"item": [
+						{
+							"name": "Get a single flashcard",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": [
+								{
+									"name": "Get a single flashcard",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards/1",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards",
+												"1"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"717bff6306fd56cb14e440430bf580c7\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "16ce3f13-967f-412d-b665-8166181a7224"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.003085"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"1\",\n        \"type\": \"flashcard\",\n        \"attributes\": {\n            \"category\": \"languages\",\n            \"question\": \"How do you say hello in Spanish?\",\n            \"answer\": \"hola\"\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Sad Path",
+					"item": [
+						{
+							"name": "Flashcard does not exist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards/100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards",
+										"100"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Flashcard does not exist",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards/100",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards",
+												"100"
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "9e4b4fe4-456e-4f6e-b18c-c1e9233257a2"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.006112"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"your query could not be completed\",\n    \"errors\": [\n        \"Couldn't find Flashcard with 'id'=100\"\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Create a new flashcard",
+			"item": [
+				{
+					"name": "Happy Path",
+					"item": [
+						{
+							"name": "Post a new flashcard",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards?question=What is the tallest mountain on earth?&answer=Mount Everest&category=nature",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "What is the tallest mountain on earth?"
+										},
+										{
+											"key": "answer",
+											"value": "Mount Everest"
+										},
+										{
+											"key": "category",
+											"value": "nature"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Post a new flashcard",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": ""
+										},
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards?question=What is the tallest mountain on earth?&answer=Mount Everest&category=nature",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards"
+											],
+											"query": [
+												{
+													"key": "question",
+													"value": "What is the tallest mountain on earth?"
+												},
+												{
+													"key": "answer",
+													"value": "Mount Everest"
+												},
+												{
+													"key": "category",
+													"value": "nature"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"47d853ac2e654dd817df704d62ec315f\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "4cd5ed22-77f8-41fa-a0f3-6cd6b74acb86"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.010033"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"12\",\n        \"type\": \"flashcard\",\n        \"attributes\": {\n            \"category\": \"nature\",\n            \"question\": \"What is the tallest mountain on earth?\",\n            \"answer\": \"Mount Everest\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "PENDING Post another flashcard query params",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards?question=Who won the Super Bowl last season?&answer=Tampa Bay Buccaneers&category=sports",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "Who won the Super Bowl last season?"
+										},
+										{
+											"key": "answer",
+											"value": "Tampa Bay Buccaneers"
+										},
+										{
+											"key": "category",
+											"value": "sports"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sad Path",
+					"item": [
+						{
+							"name": "Misspelled question params",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards?not_question=What is the tallest mountain on earth?&answer=Mount Everest&category=nature",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards"
+									],
+									"query": [
+										{
+											"key": "not_question",
+											"value": "What is the tallest mountain on earth?"
+										},
+										{
+											"key": "answer",
+											"value": "Mount Everest"
+										},
+										{
+											"key": "category",
+											"value": "nature"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Misspelled question params",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards?not_question=What is the tallest mountain on earth?&answer=Mount Everest&category=nature",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards"
+											],
+											"query": [
+												{
+													"key": "not_question",
+													"value": "What is the tallest mountain on earth?"
+												},
+												{
+													"key": "answer",
+													"value": "Mount Everest"
+												},
+												{
+													"key": "category",
+													"value": "nature"
+												}
+											]
+										}
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "58c3e2e0-23c9-4a7f-a98d-1d38cd79d500"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.006412"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"your record could not be saved\",\n    \"errors\": [\n        \"Question can't be blank\"\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Missing answer params",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards?question=What is the tallest mountain on earth?&category=nature",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "What is the tallest mountain on earth?"
+										},
+										{
+											"key": "answer",
+											"value": "Mount Everest",
+											"disabled": true
+										},
+										{
+											"key": "category",
+											"value": "nature"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Missing answer params",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards?question=What is the tallest mountain on earth?&category=nature",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards"
+											],
+											"query": [
+												{
+													"key": "question",
+													"value": "What is the tallest mountain on earth?"
+												},
+												{
+													"key": "answer",
+													"value": "Mount Everest",
+													"disabled": true
+												},
+												{
+													"key": "category",
+													"value": "nature"
+												}
+											]
+										}
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "f0c44c33-e981-4c3a-aae8-2145f562a531"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.004288"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"your record could not be saved\",\n    \"errors\": [\n        \"Answer can't be blank\"\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "Missing Category params",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards?question=What is the tallest mountain on earth?&answer=Mount Everest",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "What is the tallest mountain on earth?"
+										},
+										{
+											"key": "answer",
+											"value": "Mount Everest"
+										},
+										{
+											"key": "category",
+											"value": "nature",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Missing Category params",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards?question=What is the tallest mountain on earth?&answer=Mount Everest",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards"
+											],
+											"query": [
+												{
+													"key": "question",
+													"value": "What is the tallest mountain on earth?"
+												},
+												{
+													"key": "answer",
+													"value": "Mount Everest"
+												},
+												{
+													"key": "category",
+													"value": "nature",
+													"disabled": true
+												}
+											]
+										}
+									},
+									"status": "Unprocessable Entity",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "Cache-Control",
+											"value": "no-cache"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "d8ab0ff9-7112-467b-ac30-86261b636f2c"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.007297"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"your record could not be saved\",\n    \"errors\": [\n        \"Category can't be blank\"\n    ]\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Update a flashcard",
+			"item": [
+				{
+					"name": "Happy Path",
+					"item": [
+						{
+							"name": "Original GET response for flashcard",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards",
+										"5"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Original GET response for flashcard",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards/5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards",
+												"5"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"539484b60f884ebaa77a887c34905139\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "3b890cc3-2fb5-4330-bf4a-f81435a932b0"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.002421"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"5\",\n        \"type\": \"flashcard\",\n        \"attributes\": {\n            \"category\": \"math\",\n            \"question\": \"What is 1+1?\",\n            \"answer\": \"2\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Update and response for flashcard",
+							"request": {
+								"method": "PATCH",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards/5?question=What is 4 plus 4&answer=8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards",
+										"5"
+									],
+									"query": [
+										{
+											"key": "question",
+											"value": "What is 4 plus 4"
+										},
+										{
+											"key": "answer",
+											"value": "8"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Update and response for flashcard",
+									"originalRequest": {
+										"method": "PATCH",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards/5?question=What is 4 plus 4&answer=8",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards",
+												"5"
+											],
+											"query": [
+												{
+													"key": "question",
+													"value": "What is 4 plus 4"
+												},
+												{
+													"key": "answer",
+													"value": "8"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"a42dc37fb513f3a5e7583999d1ac9eea\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "99b312b0-b759-4417-b910-a7d0f0eba341"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.007770"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"5\",\n        \"type\": \"flashcard\",\n        \"attributes\": {\n            \"category\": \"math\",\n            \"question\": \"What is 4 plus 4\",\n            \"answer\": \"8\"\n        }\n    }\n}"
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "Sad Path",
+					"item": [
+						{
+							"name": "Original GET response for flashcard",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards/5",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards",
+										"5"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Original GET response for flashcard",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:3000/api/v1/flashcards/5",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "3000",
+											"path": [
+												"api",
+												"v1",
+												"flashcards",
+												"5"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json; charset=utf-8"
+										},
+										{
+											"key": "ETag",
+											"value": "W/\"539484b60f884ebaa77a887c34905139\""
+										},
+										{
+											"key": "Cache-Control",
+											"value": "max-age=0, private, must-revalidate"
+										},
+										{
+											"key": "X-Request-Id",
+											"value": "3b890cc3-2fb5-4330-bf4a-f81435a932b0"
+										},
+										{
+											"key": "X-Runtime",
+											"value": "0.002421"
+										},
+										{
+											"key": "Vary",
+											"value": "Origin"
+										},
+										{
+											"key": "Transfer-Encoding",
+											"value": "chunked"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"data\": {\n        \"id\": \"5\",\n        \"type\": \"flashcard\",\n        \"attributes\": {\n            \"category\": \"math\",\n            \"question\": \"What is 1+1?\",\n            \"answer\": \"2\"\n        }\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "Bad params given",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": null
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Delete a flashcard",
+			"item": [
+				{
+					"name": "Happy path",
+					"item": [
+						{
+							"name": "PENDING Flashcard exists",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards/8",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards",
+										"8"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Sad path",
+					"item": [
+						{
+							"name": "PENDING Flashcard does not exist",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:3000/api/v1/flashcards/100",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "3000",
+									"path": [
+										"api",
+										"v1",
+										"flashcards",
+										"100"
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		}
+	]
+}

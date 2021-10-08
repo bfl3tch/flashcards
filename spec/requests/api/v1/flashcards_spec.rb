@@ -63,7 +63,7 @@ RSpec.describe 'Flashcard API' do
   describe 'create request' do
     context 'happy path' do
       it 'creates an individual card' do
-        post '/api/v1/flashcards', params: { flashcard: { question: "Michael Jordan's sport?", answer: 'basketball', category: 'sports' } }
+        post '/api/v1/flashcards', params: { question: "Michael Jordan's sport?", answer: 'basketball', category: 'sports' }
 
         body = JSON.parse(response.body)
 
@@ -75,7 +75,7 @@ RSpec.describe 'Flashcard API' do
 
     context 'sad path' do
       it 'returns an unprocessible entity error if bad params given' do
-        post '/api/v1/flashcards', params: { flashcard: { bad_question: "Michael Jordan's sport?", wrong_answer: 'basketball', incorrect_category: 'sports' } }
+        post '/api/v1/flashcards', params: { bad_question: "Michael Jordan's sport?", wrong_answer: 'basketball', incorrect_category: 'sports' }
 
         body = JSON.parse(response.body)
 
@@ -90,7 +90,7 @@ RSpec.describe 'Flashcard API' do
       it 'updates an individual card' do
         create(:flashcard, id: 1, question: "Michael Jordan's sport?", answer: 'basketball', category: 'sports')
 
-        patch '/api/v1/flashcards/1', params: { flashcard: { answer: 'baseball' } }
+        patch '/api/v1/flashcards/1', params: { answer: 'baseball' }
 
         body = JSON.parse(response.body)
 
@@ -105,7 +105,7 @@ RSpec.describe 'Flashcard API' do
 
         create(:flashcard, id: 1, question: "Michael Jordan's sport?", answer: 'basketball', category: 'sports')
 
-        patch '/api/v1/flashcards/1', params: { flashcard: { wrong_answer: 'baseball' } }
+        patch '/api/v1/flashcards/1', params: { wrong_answer: 'baseball' }
 
         body = JSON.parse(response.body)
 

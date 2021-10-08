@@ -31,6 +31,6 @@ class Api::V1::FlashcardsController < ApplicationController
   end
 
   def flashcard_params
-    params.require(:flashcard).permit(:question, :answer, :correct_guesses, :incorrect_guesses, :category)
+    params.permit(:question, :answer, :correct_guesses, :incorrect_guesses, :category)
   end
 end
