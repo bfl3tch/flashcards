@@ -87,7 +87,7 @@ Learning goals and areas of focus consisted of:
 
 ## <ins>Setup</ins>
 
-This project requires Ruby 2.7.2, Rails 5.2.6.
+This project requires Ruby 2.7.2, Rails 5.2.6, Node 14.18.0, npm 6.14.15.
 
 * Fork this repository
 * Install gems and set up your database:
@@ -109,6 +109,10 @@ This project requires Ruby 2.7.2, Rails 5.2.6.
     ```bash
     $ rails -v
     Rails 5.2.6
+    $ node -v
+    Node 14.18.0
+    $ npm -v
+    npm 6.14.15
     ```
 
 * Database Creation
