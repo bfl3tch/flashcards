@@ -1,36 +1,31 @@
+<div align="center">
+  
 [![Contributors][contributors-shield]][contributors-url]
 [![Issues][issues-shield]][issues-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Forks][forks-shield]][forks-url]
 ![Version][version-badge]
 
+  
 ### FlashCards
-
+  
 #### Users can view questions and categories, with the ability "flip" the card to view the answer by clicking on it
-
 ##### A ReSTful, JSON 1.0 compliant API built in Rails behind a React FE
 ###### Allows for viewing, creating, updating, and deleting flashcards <br/>
+ 
 
 <img src="https://media2.giphy.com/media/pjMj7ztdPyd1UvwfwV/giphy.gif?cid=790b76112ce57441cb36a2eb5126d8eddfa8c60148a52272&rid=giphy.gif&ct=g" height="70%" width="70%"/>
 <img src="https://user-images.githubusercontent.com/74567704/136487889-aa9de81e-853a-4f8c-8ae4-e3127f7982db.png" />
 
+</div>
+
 ## Table of Contents
 
-- [Contributors](#contributors)
 - [Overview](#overview)
 - [Tools Utilized](#frameworks)
 - [Project Configurations](#setup)
 - [Exposed Endpoints](#endpoints)
-
-------
-
-### <ins>Contributors</ins>
-
-
-👤  **Brian Fletcher**
-  
-  <a href="https://www.linkedin.com/in/bfl3tch"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
-  <a href="https://github.com/bfl3tch"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white"></a>
+- [Contributors](#contributors)
 
 ------
 
@@ -397,6 +392,18 @@ DELETE /flashcards/1
 DELETE http://localhost:3000/api/v1/flashcards/1
 
 ```
+
+------
+
+### <ins>Contributors</ins>
+
+
+👤  **Brian Fletcher**
+  
+  <a href="https://www.linkedin.com/in/bfl3tch"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"></a>
+  <a href="https://github.com/bfl3tch"><img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=GitHub&logoColor=white"></a>
+
+------
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
